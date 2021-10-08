@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davlatlar haqida ma'lumotlar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Davlatlar haqida ma'lumotlar</h1>
+        <button class="toggle"><i class="far fa-moon moon">Tunggi rejim</i></button>
+    </div>
+    <div class="container">
+        <div class="form-control">
+            <input type="text" placeholder="Davlatni izlang..." class="search">
+            <i class="fas fa-search search"></i>
+        </div>
+        <div class="dropDownCon">
+            <div class="dropDown">
+                <p id="saralash">Saralash</p>
+                <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="drop showDropDown">
+                <p class="region">All</p>
+                <p class="region">Africa</p>
+                <p class="region">America</p>
+                <p class="region">Asia</p>
+                <p class="region">Europe</p>
+                <p class="region">Oceania</p>
+            </div>
+        </div>
+    </div>
+    <div class="countries">
+        <!-- <div class="country">
+            
+        </div> -->
+    </div>
+    <div class="countryModal show">
+        <button class="back">Back</button>
+        <div class="modal">
+            <div class="leftModal">
+                <img src="https://flagcdn.com/uz.svg" alt="">
+            </div>
+            <div class="rightModal">
+                <h1>Uzbekistan</h1>
+                <div class="modalInfo">
+                    <div class="innerLeft inner">
+                        <p class="regionName"><strong>Region</strong>${data.region}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                    </div>
+                    <div class="innerRight inner">
+                        <p class="countryName"><strong>Region</strong>${data.region}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                        <p><strong>Capital:</strong>${data.capital}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
